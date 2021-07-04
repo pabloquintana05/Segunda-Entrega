@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login de Funcionarios</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manjari&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="Contenedor" id="ContenedorFun">
+        <header class="header">
+            <img  style="width:300px; height: 49px;" src="https://www.asse.com.uy/plantillas/temas/default/imagenes/logoblanco.svg"> 
+        </header>
+        <nav class="Menu">
+            <ul class="lista">
+                <li><a class="enlace" href="index.html">Inicio</a></li>
+                <li><a class="enlace" href="videollamada.html">Solicitar Videollamada con Médico</a></li>
+                <li><a class="enlace" href="medicamentos.html">Solicitar Repetición de Medicación</a></li>
+                <li><a class="enlace" href="funcionarios.html">Area Funcionarios</a></li>
+            </ul>
+        </nav>
+        <main class="contenidoFuncionarios">
+            <h2>Ingreso de Funcionarios</h2>
+            <form>
+                <div class="DatosPacientes" id="DatosLogin">
+                    <label form="nombre">Usuario  </label>
+                
+                    <input type="text" id="UsuarioF">
+                    <br><br>
+                    <label form="contrasena">Contraseña </label>
+                    <input type="password" id="passwordF">
+                    
+                </div>
+                <button class="login">Ingresar</button>
+            </form>
+        </main>
+        <footer class="Footer">
+            <p>HOSPITAL DE COLONIA  &nbsp; | &nbsp; Tel. 45236819 &nbsp; | &nbsp; Colonia del Sacramento &nbsp; | &nbsp; Uruguay</p>
+        </footer>
+        
+    </div>
+    <div class="popup-contenedor">
+        <div class="popup popup-cerrar">
+            <p class="cerrar"><b>X</b></p>
+            <div class="textopopup">
+                <p id="texto"></p>
+            </div>
+        </div>
+    </div>
+    <script src="appfunc.js"></script>
+</body>
+</html>

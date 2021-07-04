@@ -1,0 +1,8 @@
+Diego,
+
+-Deje hecha la ruta de Usuarios, que si bien yo en mi proyecto no la precisaba, la hice y la probe porque en la ultima clase
+se dijo que tenia que estar.
+
+-El chat quedo funcionando, se entra desde el index (entra el Paciente que necesita hacer una consulta) y tambien los funcionarios
+de Atencion al Usuario acceden por la parte de Funcionarios con el usuario AtencionalUsuario para contestar consultas por el
+chat.

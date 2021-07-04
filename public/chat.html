@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat - Hospital de Colonia</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manjari&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="Contenedor">
+        <header class="header">
+            <img  style="width:300px; height: 49px;" src="https://www.asse.com.uy/plantillas/temas/default/imagenes/logoblanco.svg"> 
+        </header>
+        <nav class="Menu">
+            <ul class="lista">
+                <li><a class="enlace" href="index.html">Inicio</a></li>
+                <li><a class="enlace" href="videollamada.html">Solicitar Videollamada con Médico</a></li>
+                <li><a class="enlace" href="medicamentos.html">Solicitar Repetición de Medicación</a></li>
+                <li><a class="enlace" href="funcionarios.html">Area Funcionarios</a></li>
+            </ul>
+        </nav>
+        <main class="contenidoMed" id="chat-div">
+            <div class="chat-messages">
+
+            </div>
+            <div class="chat-form-container">
+                <form id='chat-form'>
+                    <input 
+                        id="msg"
+                        type="text"
+                        placeholder="Escriba un Mensaje"
+                        required
+                        autocomplete="off"
+                    />
+                    <button class="boton-enviar"><i class="fas fa-paper-plane"></i>ENVIAR</button>
+                </form>
+                <button class="boton-enviar" id="boton-salir">Salir del Chat</button> 
+            </div>
+        </main>
+        <footer class="Footer">
+            <p>HOSPITAL DE COLONIA  &nbsp; | &nbsp; Tel. 45236819 &nbsp; | &nbsp; Colonia del Sacramento &nbsp; | &nbsp; Uruguay</p>
+        </footer>
+        
+    </div>
+ <script src="/socket.io/socket.io.js"></script>
+ <script src="appchat.js"></script>    
+</body>
+</html>

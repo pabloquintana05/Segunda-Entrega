@@ -1,0 +1,766 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100vh;
+}
+/* Defino en el body la imagen de fondo y la tipografia que voy a usar */
+body {
+    background-image: url("./753471.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    font-family: 'Manjari', sans-serif;
+}
+
+/* Realizo un grid general con 5 columnas para contener toda la web */
+.Contenedor {
+    background: transparent;
+    width: 90%;
+    max-width: 1000px;
+    margin: 5px auto;
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: minmax (5px, auto);
+    column-gap: 1em;
+    row-gap: 5px;
+}
+
+/* Le creo un marco y un fondo a las clases Menu, contenido, contenido-aside y todos los divs */
+.Contenedor > .Menu,
+.Contenedor > .contenido,
+.Contenedor > .contenido-aside,
+.Contenedor > div {
+    background: white;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+/* En el Main de la pagina Medicamentos, le digo que ocupe todo el espacio de la grilla */
+.Contenedor > .contenidoMed {
+    background: white;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    grid-column: 1/6;
+    padding: 20px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Al header le digo que ocupe todas las columnas de la grid y le pongo el fondo azul */
+/* Agrego fotos en el header para realizar animacion */
+.Contenedor > .header {
+    grid-column: 1/6;
+    background: #00469c; 
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+/* A la clase del Footer le digo que ocupe todas las columnas y que quede alineado el texto al centro */
+.Contenedor > .Footer {
+    grid-column: 1/6;
+    background: #00469c;
+    color: white;
+    padding: 12px;
+    text-align: center;
+}
+
+/* A la clase Menu (nav) le digo que ocupe todas las columnas y realizo el menu de la navegacion */
+.Contenedor > .Menu {
+    grid-column: 1/6;
+    padding: 5px;
+    text-align: center;
+}
+
+.Menu > ul {
+    list-style: none;
+}
+
+.Menu > ul > li{
+    display: inline-block;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.Menu > ul > li > a{
+    text-decoration: none;
+    display: block;
+    padding: 15px 30px;
+}
+
+.Menu > ul > li > a:hover {
+    color: white;
+    background-color: #00469c;
+    
+}
+
+/* En la clase contenido creo un flexbox y armo el formulario */
+.Contenedor > .contenido {
+    grid-column: span 3;
+    padding: 20px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.contenido > h2{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+}
+
+.contenido > form {
+    width: 400px;
+    height: 400px;
+    padding: 35px;
+    color: black;
+    background: #00469c;
+    border: 1px solid black;
+    border-radius: 5px;
+    
+   
+}
+
+.contenidoMed > form {
+    
+    width: 100%;
+    height: 100%;
+    padding: 35px;
+    color: black;
+    background: #00469c;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+   
+}
+
+.Contenedor > .contenidoVideo {
+    background: white;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    grid-column: 1/6;
+    padding: 20px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contenidoVideo > form {
+    
+    width: 600px;
+    height: 100%;
+    padding: 35px;
+    color: black;
+    background: #00469c;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+   
+   
+}
+
+
+.contenidoVideo > form > label {
+    color: #fff;
+   
+}
+
+.contenidoVideo > form > input[type="text"]{
+    width: 90%;
+    height: 20px;
+    margin-bottom: 20px;
+}
+
+.solicitar-videollamada {
+    width: 250px;
+    height: 40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background: white;
+    color: #00469c;
+    font-size: 20px;
+    font-style:oblique;
+    cursor: pointer;
+    
+}
+
+#ContenedorFun {
+    
+    margin-top: 20px;
+    margin-bottom: 19px;
+    
+}
+
+.Contenedor > .contenidoFuncionarios {
+    background: white;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    grid-column: 1/6;
+    padding: 20px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contenidoFuncionarios > form {
+    width: 500px;
+    height: 100%;
+    padding: 35px;
+    color: black;
+    background: #00469c;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.contenidoFuncionarios > form > p {
+    color: #fff;
+    text-align: left;
+}
+
+.contenidoFuncionarios > form > div{
+    text-align: left;
+    padding-left: 50px;
+}
+
+#DatosLogin > input{
+    width: 90%;
+    margin-bottom: 30px;
+}
+
+.DatosPacientes {
+    border-radius: 15px;
+    border-style: solid;
+    color: #fff;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+#DatosPacV {
+    text-align: left;
+    padding-left:50px;
+}
+
+#DatosPacV > input[type="text"]{
+    width: 90%;
+}
+
+.login {
+    width: 200px;
+    height: 40px;
+    
+    border-radius: 10px;
+    background: white;
+    color: #00469c;
+    font-size: 20px;
+    font-style:oblique;
+    cursor: pointer;
+}
+
+.Medicamento {
+    border-radius: 15px;
+    border-style: solid;
+    color: #fff;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+}
+
+.ListaMedicamentos {
+   
+    border-radius: 15px;
+    border-style: solid;
+    color: #fff;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.contenidoMed > form > p {
+    color: #fff;
+    margin-bottom: 3px;
+    text-align: left;
+
+}
+
+#cantidad-Med {
+    width: 40px;
+}
+.contenidoMed > form > label{
+    color: white;
+}
+
+.contenidoMed > form > input[type="text"]{
+    width: 200px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.cargarMed{
+    width: 250px;
+    height: 27px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background: white;
+    color: #00469c;
+    font-size: 20px;
+    font-style:oblique;
+    cursor: pointer;
+}
+
+#nombreP {
+    width: 120px;
+}
+
+.Borrar {
+    width: 300px;
+    height: 40px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background: white;
+    color: #00469c;
+    font-size: 20px;
+    font-style:oblique;
+    cursor: pointer;
+}
+
+.Enviar{
+    width: 200px;
+    height: 40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background: white;
+    color: #00469c;
+    font-size: 20px;
+    font-style:oblique;
+    cursor: pointer;
+}
+
+#listamed{
+    margin-left: 40px;
+    margin-right: 10px;
+    list-style: none;
+    min-width: 400px;
+    
+}
+#listamed li {
+    display: grid;
+    grid-template-columns: 300px 250px 50px;
+    text-align: center;
+    align-items: center;
+    justify-items: left;
+    justify-content: center;
+    gap: 5px;
+    padding: 15px;
+}
+.contenidoListaMed {
+    color: #fff;
+   
+}
+
+
+.contenido > form > label{
+    color: white;
+}
+
+.contenido > form > input[type="text"]{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.chat {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background: white;
+    color: #00469c;
+    font-size: 20px;
+    font-style:oblique;
+    cursor: pointer;
+}
+
+/* A la clase contenido-aside creo un flexbox para centrar el tweet y google map */
+.Contenedor > .contenido-aside {
+    grid-column: span 2;
+    background: grey;
+    display: flex;
+    padding: 5px;
+    margin-left: 1px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Footer > p {
+    font-size: 15px;
+}
+
+/* Cada img le asigno una clase, llamo a la animacion dando un delay a las 2 ultimas fotos */
+.animado {
+    animation-name: animacion-img;
+    animation-duration: 7s;
+    animation-iteration-count: 3;
+}
+
+.animado2 {
+    animation-name: animacion-img;
+    animation-duration: 7s;
+    animation-iteration-count: 3;
+    animation-delay: 2s;
+}
+
+.animado3 {
+    animation-name: animacion-img;
+    animation-duration: 7s;
+    animation-iteration-count: 3;
+    animation-delay: 4s;
+}
+ 
+@keyframes animacion-img {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+    
+}
+
+/* Creo un div popup contenedor escondido */
+.popup-contenedor {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+/* Creo otro div, que haga una transicion de arriba hacia abajo */
+.popup {
+    width: 50%;
+    height: 50%;
+    background: #00469c;
+    overflow: hidden;
+    text-align:center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    transition: transform 2s;
+    transform: translateY(0%);
+    border-radius: 10px;
+}
+
+/* Le doy estilo al texto del popup */
+.textopopup {
+    padding: 30px;
+    text-align:justify;
+    color: #fff;
+    border-style: solid;
+    border-radius: 15px;
+    border-width: 5px;
+    font-size: 20px;
+    font-style: normal;
+}
+
+/* Dicha clase lo que hace es sacar el popup de la pantalla cuando se le da click al boton cerrar */
+.popup-cerrar {
+   transform: translateY(-200%); 
+}
+
+/* le doy estilo al boton cerrar */
+.cerrar{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    color: #00469c;
+    line-height: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.EnviarMed {
+    display: none;
+}
+.chat-messages {
+    padding: 5px;
+    width: 500px;
+    max-height: 250px;
+    overflow-y: scroll;
+    background-color: gray;
+}
+
+.boton-enviar {
+    cursor: pointer;
+    padding: 5px 15px;
+    background: var(--light-color);
+    color: var(--dark-color-a);
+    border: 1;
+    font-size: 17px;
+}
+
+.chat-messages .message {
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.chat-messages .message .meta {
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--dark-color-b);
+    opacity: 0.7;
+    margin-bottom: 7px;
+}
+
+.chat-messages .message .meta span {
+    color: #777;
+}
+
+.chat-form-container {
+    width: 500px;
+    background-color: var(--dark-color-a);
+
+}
+
+#chat-div {
+    background-color: #00469c;
+}
+
+.chat-form-container form {
+    display:flex;
+}
+
+.chat-form-container input[type='text']{
+    font-size: 16px;
+    padding: 5px;
+    height: 40px;
+    flex: 1;
+}
+/* Defino un media query para hacerlo responsivo y acomodo el sitio para un width de 500px*/
+@media (max-width: 500px) {
+    body {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+        background-image: none;
+    }
+   
+    
+    .Contenedor > .header {
+        grid-column: 1/6;
+    }
+
+    #imagen1 {
+        display: none;
+    }
+
+    #imagen2 {
+        display: none;
+    }
+
+    #imagen3 {
+        display: none;
+    }
+
+    .Contenedor > .Menu {
+        grid-column: 1/6;
+    }
+    
+    /* realizo un flexbox para organizar el menu hacia abajo */
+    .lista {
+        display: flex;
+        flex-direction: column;
+        
+        width: 100%;
+        list-style: none;
+    }
+
+    .enlace {
+        display: block;
+        text-align: center;
+        padding: 20px;
+        background-color: #00469c;
+        color: white;
+    }
+
+    .Menu > ul > li > a:hover {
+        color: #00469c;
+        background-color: white;
+        
+    }
+
+    .Contenedor > .contenido {
+        grid-column: 1/6;
+    }
+    
+    .Contenedor > .contenido-aside {
+        grid-column: 1/6;
+    }
+    
+    .Contenedor > .Footer {
+        grid-column: 1/6;
+        
+       
+    }
+
+    .Contenedor > .Footer > p {
+        font-size: 12px;
+    }
+
+    /* Modifico el popup para cuando se vuelve responsiva la pagina */
+    .popup {
+        width: 80%;
+        height: 50%;
+        background: #00469c;
+        overflow: hidden;
+        text-align:center;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        position: relative;
+        transition: transform 2s;
+        transform: translateY(0%);
+        border-radius: 10px;
+    }
+    
+    .popup-cerrar {
+        transform: translateY(-200%); 
+     }
+    
+    .Contenedor > .contenidoMed {
+        grid-column: 1/6;
+    }
+
+    .contenidoVideo {
+        grid-column: 1/6;
+    }
+
+    .contenidoVideo > form{
+        width: 100%;
+        padding: 10px;
+    }
+
+    .contenidoVideo > h2 {
+        text-align: center;
+    }
+
+    #DatosPacV > input[type="text"]{
+       height: 30px;
+    }
+
+    .contenidoFuncionarios {
+        grid-column: 1/6;
+        padding: 5px;
+        
+    }
+    #DatosLogin > input{
+        height: 30px;
+    }
+    .contenidoFuncionarios > form {
+        margin-top: 10px;
+        margin-bottom: -10px;
+        margin-right: -5px;
+        margin-left: -5px;
+        width: 100%;
+        height: 380px;
+        padding: 5px;
+    }
+
+    
+    .DatosPacientes {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 7px 10px 7px;
+        gap: 10px;
+        text-align: left;
+    }
+
+    #nombreP {
+        width: 100%;
+    }
+
+    .Medicamento {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .ListaMedicamentos {
+        display: none;
+    }
+    
+    #Solicitudrepite{
+        display: none;
+    }
+    
+    .EnviarMed {
+        display: block;
+        width: 200px;
+        height: 40px;
+        margin-bottom: 20px;
+        margin-top: 5px;
+        border-radius: 10px;
+        background: white;
+        color: #00469c;
+        font-size: 20px;
+        font-style:oblique;
+        cursor: pointer;
+    }
+
+    .contenidoMed > h2 {
+        text-align: center;
+    }
+
+    .cargarMed {
+        display: none;
+    }
+
+    .Enviar {
+        display: none;
+    }
+}
+

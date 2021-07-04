@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital de Colonia</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manjari&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="Contenedor">
+        <header class="header">
+            <img  style="width:300px; height: 49px;" src="https://www.asse.com.uy/plantillas/temas/default/imagenes/logoblanco.svg"> 
+            <img id="imagen1" class="animado" style="width: 200px; height: 100px;" src="./fcn_hcolonia.jpg">
+            <img id="imagen2" class="animado2" style="width: 200px; height: 100px;" src="./Hospital-777x437.jpg">
+            <img id="imagen3" class="animado3" style="width: 200px; height: 100px;" src="./fcn.png">
+            
+        </header>
+        <nav class="Menu">
+            <ul class="lista">
+                <li><a class="enlace" href="index.html">Inicio</a></li>
+                <li><a class="enlace" href="videollamada.html">Solicitar Videollamada con Médico</a></li>
+                <li><a class="enlace" href="medicamentos.html">Solicitar Repetición de Medicación</a></li>
+                <li><a class="enlace" href="funcionarios.html">Area Funcionarios</a></li>
+            </ul>
+        </nav>
+        <main class="contenido">
+            <h2>Comunicarse en linea con Atención al Usuario</h2>
+            <form>
+                <label form="nombre">Nombre</label>
+                <br>
+                <input type="text" id="nombrePac">
+                <br><br>
+                <label form="apellido">Apellido</label>
+                <input type="text" id="apellidoP">
+                <br><br>
+                <label form="documento">Documento (sin puntos ni guión)</label>
+                <input type="text" id="documentoP" maxlength="8">
+                <br><br>
+                <button class="chat">Enviar </button>
+            </form>
+        </main>
+        <aside class="contenido-aside">
+            <div>
+                <a class="twitter-timeline" data-height="300px" data-width="480px" href="https://twitter.com/ASSEcomunica?ref_src=twsrc%5Etfw">Tweets by ASSEcomunica</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3289.757842857095!2d-57.83257708520045!3d-34.45829445732424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3127e9182f58b%3A0xfb56b7773e30986!2sHospital%20Colonia%20-%20Doctor%20Samuel%20Bert%C3%B3n!5e0!3m2!1ses-419!2suy!4v1618600902199!5m2!1ses-419!2suy" width="370px" height="300px" style="border: 1px solid; border-radius: 5px;" allowfullscreen="" loading="lazy"></iframe>
+            </div>    
+        </aside>
+        <footer class="Footer">
+            <p>HOSPITAL DE COLONIA  &nbsp; | &nbsp; Tel. 45236819 &nbsp; | &nbsp; Colonia del Sacramento &nbsp; | &nbsp; Uruguay</p>
+        </footer>
+        
+    </div>
+    <div class="popup-contenedor">
+        <div class="popup popup-cerrar">
+            <p class="cerrar"><b>X</b></p>
+            <div class="textopopup">
+                <p id="texto"></p>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
